@@ -1,0 +1,104 @@
+.wrapperBanner {
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .bannerVertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+    .bannerHorizontal {
+      width: inherit;
+      height: inherit;
+      background: linear-gradient(to right, #111 10%, transparent 60%);
+      .wrapperInfoAnime {
+        position: relative;
+        height: 100%;
+        .wrapperLayerAnime {
+          position: absolute;
+          top: 20%;
+          left: 30px;
+          width: 36%;
+          z-index: 10;
+          background-color: transparent;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          h2 {
+            font-size: 4rem;
+            background-color: transparent;
+            margin: 0;
+          }
+          p {
+            font-size: 1rem;
+            background-color: transparent;
+            max-width: 400px;
+            white-space: normal;
+          }
+          .wrapperButtonWatch {
+            display: flex;
+            background-color: transparent;
+            .buttonAnime {
+              background-color: #fff;
+              color: #111;
+              padding: 0.8rem;
+              max-width: 100%;
+              border: unset;
+              border-radius: 4px;
+              font-size: 1rem;
+              font-weight: bold;
+              display: flex;
+              justify-content: center;
+              margin: 0 10px;
+              display: flex;
+              align-items: center;
+              &:hover {
+                background-color: rgba(255, 255, 255, 0.75);
+                cursor: pointer;
+              }
+              .play {
+                background-color: #fff;
+                background-color: transparent;
+                padding-right: 10px;
+                path {
+                  color: #111;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .wrapperBanner {
+    background-position: left;
+    .bannerVertical {
+      .bannerHorizontal {
+        .wrapperInfoAnime {
+          .wrapperLayerAnime {
+            width: 74%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapperBanner {
+    background-position: left;
+    .bannerVertical {
+      .bannerHorizontal {
+        .wrapperInfoAnime {
+          .wrapperLayerAnime {
+            width: 85%;
+            h2 {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

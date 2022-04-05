@@ -1,0 +1,97 @@
+.wrapperFeatured {
+    padding: 1vw 30px;
+    position: relative;
+    h2 {
+        line-height: 1.3;
+        font-weight: 700;
+        margin: 0 4% 0.5em 10px;
+    }
+    .movieRowListarea {
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+        .movieRowList {
+            transition: all ease 0.5s;
+            .movieRowItem {
+                position: relative;
+                display: inline-block;
+                width: 350px;
+                height: 192px;
+                transform: scale(0.95);
+            }
+        }
+    }
+    .movieRowLeft,
+    .movieRowRight {
+        position: absolute;
+        width: 40px;
+        height: 192px;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+        transition: all ease 0.5s;
+        svg {
+            fill: #fff;
+        }
+    }
+
+    .movieRowLeft {
+        left: 0;
+    }
+    .movieRowRight {
+        right: 0;
+    }
+    &:hover {
+        .movieRowLeft,
+        .movieRowRight {
+            opacity: 1;
+        }
+    }
+}
+
+.thumbnailHome {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.animeName {
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e50914;
+    padding: 4px 7px;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .wrapperFeatured {
+        .movieRowLeft,
+        .movieRowRight {
+            display: none;
+        }
+        .movieRowListarea {
+            .movieRowList {
+                .movieRowItem {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}

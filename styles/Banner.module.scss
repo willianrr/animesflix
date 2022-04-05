@@ -1,0 +1,95 @@
+.wrapperBanner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    .bannerVertical {
+        width: inherit;
+        height: inherit;
+        background: linear-gradient(to top, #111 20%, transparent 90%);
+        .bannerHorizontal {
+            width: inherit;
+            height: inherit;
+            background: linear-gradient(to right, #111 20%, transparent 60%);
+           .wrapperLayer{
+                position: absolute;
+                top: 0;
+                bottom: 40%;
+                left: 30px;
+                width: 45%;
+                z-index: 10;
+                background-color: transparent;
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                h2 {
+                    font-size: 4vw;
+                    background-color: transparent;
+                    position: relative;
+
+                }
+                p {
+                    font-size: 1vw;
+                    background-color: transparent;
+                    height: 6vw;   
+                }
+                .buttonWatch {
+                    background-color: #fff;
+                    color: #111;
+                    padding: 0.4rem;
+                    max-width: 192px;
+                    border: unset;
+                    border-radius: 4px;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    .play {
+                        height: 2rem;
+                        width: 2rem;
+                        background-color: transparent;
+                        padding-right: 10px;
+                        path {
+                            color:#111;
+                        }
+                        
+                    }
+                    &:hover {
+                        background-color: rgba(255,255,255,0.75);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 768px) {
+    .wrapperBanner {
+        background-position: left;
+        .bannerVertical {
+            .bannerHorizontal {
+                .wrapperLayer {
+                    position: absolute;
+                    top: 10%;
+                    left: 30px;
+                    width: 85%;
+                    z-index: 10;
+                    background-color: transparent;
+                    display: flex;
+                    flex-direction: column;
+                    bottom:unset;
+                    h2 {
+                        font-size: 50px;
+                        min-height: unset;
+                    }
+                    p {
+                        font-size: 20px;
+                        height: unset;
+                    }
+                }
+            }
+        }
+    }
+    
+}

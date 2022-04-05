@@ -1,0 +1,53 @@
+.inputSearch {
+  display: flex;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #cecece;
+  color: #141414;
+  padding-left: 15px;
+  width: 100%;
+  outline: unset;
+}
+
+.inputSearchSmall {
+  display: flex;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #cecece;
+  color: #141414;
+  padding-left: 15px;
+  flex:1;
+  width: 90%;
+  flex-grow: 1;
+}
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.generos {
+  font-size: 0.5em;
+}
+
+.anime {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  cursor: pointer;
+  background: #000000;
+}
+
+.itemContainer:hover {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  cursor: pointer;
+  background: #002020;
+}

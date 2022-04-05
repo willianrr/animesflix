@@ -1,0 +1,42 @@
+.wrapperFooter {
+    padding: 0 30px;
+    border-top: 1px solid #c1c1c132;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    .menuList {
+        display: flex;
+        li {
+            margin: -10px 20px 0 20px;
+            background-color: transparent;
+            font-size: 16px;
+            a {
+                text-decoration: none;
+                &:hover {
+                    color: #e50914;
+                    font-weight: 900;
+                }
+            }
+
+        }
+    }
+    .social {
+        svg {
+            margin: 0 10px;
+            fill: #cecece
+        }
+    }
+    
+}
+@media (max-width: 768px) {
+    .wrapperFooter {
+        flex-direction: column;
+        padding: 40px 0 10px 0;
+    }
+}
+.footerText {
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+
+}

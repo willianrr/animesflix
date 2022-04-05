@@ -1,0 +1,28 @@
+{
+  "name": "testenext",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "npx next export",
+    "prod": "rm -rf .next && next build && npx next export"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "axios": "^0.21.1",
+    "crypto-js": "^4.0.0",
+    "firebase": "^8.2.9",
+    "next": "10.2.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-spring": "^9.2.3",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {}
+}

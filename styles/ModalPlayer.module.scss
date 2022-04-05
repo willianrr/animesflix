@@ -1,0 +1,74 @@
+.wrapperModalPlayer {
+    position: relative;
+    margin-right: 15px;
+    .modalPlayer {
+        width: 100%;
+        opacity: 1;
+        margin-bottom: 0;
+        z-index: 2;
+        bottom: 0;
+        border-radius: 6px;
+        iframe {
+            border: none;
+            border-radius: 8px;
+            margin-top: 7px;
+            min-height: 700px;
+        }
+    }
+}
+@media (min-width:2560px) {
+    .wrapperModalPlayer {
+        .modalPlayer {
+            iframe {
+                min-height: 800px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .wrapperModalPlayer {
+        .modalPlayer {
+            iframe {
+                min-height: 450px;
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .wrapperModalPlayer {
+        .modalPlayer {
+            iframe {
+                min-height: 300px
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .wrapperModalPlayer {
+        .modalPlayer {
+            iframe {
+                min-height: 250px
+            }
+        }
+    }
+}
+
+.teste {
+    width: 640px; height: 480px; position: relative;
+}
+
+.hidebtn {
+    width: 100%;
+    height:70px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    background: #000000;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+.teste2{
+    width: 80px; height: 80px; position: absolute; opacity: 0; right: 0px; top: 0px;
+}

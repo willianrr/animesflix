@@ -1,0 +1,10 @@
+.wrapperDasboard {
+    margin-top: -150px;
+}
+
+@media(max-width: 768px) {
+    .wrapperDasboard {
+        margin-top: -100px;
+    }
+    
+}

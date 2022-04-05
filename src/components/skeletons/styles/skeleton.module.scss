@@ -1,0 +1,37 @@
+.skeleton {
+    background: #ddd;
+    margin: 10px 0;
+    border-radius: 4px;
+    height: 12px;
+    display: inline-block;
+}
+
+.text {
+    width: 100%;
+}
+.title {
+    width: 50%;
+    height: 20px;
+    margin-bottom: 15px;
+}
+.skeleton.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.skeleton.thumbnail {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 192px;
+    transform: scale(0.95);
+}
+.skeleton.span {
+    width: 100px;
+    height: 28px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 15px;
+    background: #908f8f;
+}

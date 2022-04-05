@@ -1,0 +1,211 @@
+.wrapperSeasonList {
+  margin: -150px 30px 30px 30px;
+  padding: 15px;
+  background-image: linear-gradient(
+    to right top,
+    #342d2d,
+    #2b2627,
+    #221f21,
+    #191819,
+    #111111
+  );
+  border-radius: 4px;
+  border: 1px solid #252525;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  .seasonMobile {
+    display: none;
+  }
+  .noIframe {
+    height: 700px;
+    background-color: #010101;
+    margin-right: 15px;
+    border-radius: 8px;
+    position: relative;
+    .noIframeSpan {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 60%;
+      left: 50%;
+      font-size: 30px;
+    }
+    .noThumbnail {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 7px;
+      .noPlayEpisode {
+        width: 80px;
+        margin: auto;
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+  .selectSeason {
+    position: relative;
+    z-index: 2;
+    .wrapperSelect {
+      .selectSeasonItem {
+        font-weight: bold;
+        border-radius: 4px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        li {
+          display: flex;
+          font-size: 12px;
+          border-radius: 8px;
+          cursor: pointer;
+          font-weight: 500;
+          margin: 5px;
+          box-shadow: -20px 20px 16px 0 #16151696,
+            inset 1px 1px 8px 0 rgb(255 255 255 / 10%),
+            -1px 1px 0px 0 rgb(255 255 255 / 55%);
+          width: 100%;
+          padding: 1rem;
+          &:hover {
+            background-color: #fff;
+            color: #111;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .showLists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 10px;
+    .showListItem {
+      align-items: center;
+      margin: 5px;
+      transition: all ease 0.2s;
+      .listThumbnail {
+        display: block;
+        margin: auto;
+        width: 100%;
+        border-radius: 8px;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        .thumb {
+          width: 100%;
+          border-radius: 4px 4px 0 0;
+        }
+        .listTitle {
+          font-size: 14px;
+          font-weight: 500;
+          position: absolute;
+          top: 0px;
+          left: 5px;
+          background-color: #e50914;
+          padding: 4px 7px;
+          border-radius: 15px;
+        }
+      }
+      .listInfo {
+        padding-left: 10px;
+        margin-top: 5px;
+        padding: 2px 5px;
+        .listEp {
+          font-weight: 300;
+          font-size: 12px;
+          line-break: anywhere;
+        }
+      }
+      .overlayThumbnail {
+        display: none;
+      }
+      &:hover {
+        cursor: pointer;
+        .overlayThumbnail {
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #000000d9;
+          border-radius: 7px;
+          .playEpisode {
+            width: 50px;
+            margin: auto;
+            display: block;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .temporadaSelecionada {
+    background-color: #fff;
+    color: #111;
+    font-weight: 700;
+  }
+}
+@media (max-width: 1440px) {
+  .wrapperSeasonList {
+    .showLists {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapperSeasonList {
+    .noIframe {
+      .noIframeSpan {
+        font-size: 20px;
+      }
+    }
+    .showLists {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapperSeasonList {
+    grid-template-columns: auto;
+    .noIframe {
+      height: 450px;
+    }
+    .seasonMobile {
+      display: block;
+    }
+    .seasonDesktop {
+      display: none;
+    }
+    .showLists {
+      .showListItem {
+        .listThumbnail {
+          .listTitle {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .wrapperSeasonList {
+    .noIframe {
+      height: 250px;
+      .noIframeSpan {
+        top: 80%;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    .showLists {
+      grid-template-columns: auto;
+      .showListItem {
+        .listThumbnail {
+          height: 150px;
+        }
+      }
+    }
+  }
+}
